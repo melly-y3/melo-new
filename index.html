@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M ♡ Y</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ARKA PLAN KALPLERİ -->
+    <div class="falling-hearts" id="fallingHearts"></div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-heart">♡</span>
+            <span>M</span>
+            <span class="logo-small-heart">♡</span>
+            <span>Y</span>
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="#home" class="nav-link active">
+                Ana Sayfa
+            </a>
+
+            <a href="#story" class="nav-link">
+                Bizim Hikayemiz
+            </a>
+
+            <a href="#songs" class="nav-link">
+                Şarkılarımız
+            </a>
+
+    
+
+            <a href="#plans" class="nav-link">
+                Yapılacaklar
+            </a>
+
+            <a href="#notes" class="nav-link">
+                Notlar
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-button" id="themeButton" title="Tema değiştir">
+                ☾
+            </button>
+
+            <button class="icon-button" id="settingsButton" title="Ayarlar">
+                ⚙
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ANA SAYFA -->
+    <main id="home">
+
+        <!-- HERO -->
+        <section class="hero">
+
+<div class="main-heart">
+
+  <svg class="hero-heart-art" viewBox="0 0 420 340">
+
+
+
+
+<!-- YÖRÜNGE YILDIZLARI -->
+
+<text class="orbit-star spin-star" x="85" y="89">✦</text>
+
+<text class="orbit-star small spin-star" x="156" y="244">𓇼</text>
+
+<text class="orbit-star small spin-star" x="306" y="201">✧ </text>
+
+<text class="orbit-star spin-star" x="332" y="87">✦</text>
+
+<!-- KALP -->
+<path
+  class="hero-heart-line"
+  d="M 210 310
+     C 190 290, 72 211, 53 130
+     C 39 72, 73 31, 128 31
+     C 168 31, 196 52, 210 81
+     C 224 52, 252 31, 292 31
+     C 347 31, 381 72, 367 130
+     C 348 211, 230 290, 210 310
+     Z"
+/>
+
+  </svg>
+
+  <div class="heart-text">
+    ℳ
+    <span class="heart-middle">♡</span>
+    𝒴
+  </div>
+
+</div>
+
+
+<div class="relationship-date">
+    16/08/2025
+</div>
+
+<div class="relationship-counter">
+    birlikte geçen
+    <strong id="daysTogether">—</strong>
+</div>
+
+
+            <!-- PLAYER -->
+            <div class="music-player">
+
+                <div class="album-cover">
+
+                    <div class="cover-placeholder">
+                        ♡
+                    </div>
+
+                </div>
+
+
+                <div class="player-main">
+
+                    <div class="track-information">
+
+                        <div>
+                            <div class="track-title" id="trackTitle">
+                                Şarkı seçilmedi
+                            </div>
+
+                            <div class="track-artist" id="trackArtist">
+                                —
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-area">
+
+                        <div class="progress-line">
+
+                            <div class="progress-fill" id="progressFill"></div>
+
+                        </div>
+
+                        <div class="time-row">
+
+                            <span id="currentTime">
+                                0:00
+                            </span>
+
+                            <span id="duration">
+                                0:00
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="player-controls">
+
+                        <button id="shuffleButton">
+                            ⤨
+                        </button>
+
+                        <button id="previousButton">
+                            |◀
+                        </button>
+
+                        <button class="play-button" id="playButton">
+                            ▶
+                        </button>
+
+                        <button id="nextButton">
+                            ▶|
+                        </button>
+
+                        <button id="repeatButton">
+                            ↻
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="player-right">
+
+                    <div class="player-service">
+                        <span class="service-icon spotify">
+                            ●
+                        </span>
+
+                        Spotify
+                    </div>
+
+                    <button class="favorite-button" id="favoriteButton">
+                        ♡
+                    </button>
+
+                </div>
+<button id="spotifyLoginButton" onclick="spotifyGiris()">
+    Spotify'a Giriş Yap
+</button>
+
+</div>
+
+            <!-- ANA SAYFA KARTLARI -->
+            <section class="home-cards">
+
+
+                <!-- HİKAYE -->
+                <a href="#story" class="home-card">
+
+
+                    <div class="card-top">
+
+                        <span class="card-icon">
+                            ♡
+                        </span>
+
+                        <span class="card-arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Bizim Hikayemiz
+                    </h3>
+
+                    <div class="mini-timeline">
+<div class="timeline-item">
+
+    <span class="timeline-dot"></span>
+
+    <div>
+        <strong>13.08.2025</strong>
+        <small>ilk konuşmamız</small>
+    </div>
+
+</div>
+
+<div class="timeline-item">
+
+    <span class="timeline-dot"></span>
+
+    <div>
+        <strong>13.08.2025</strong>
+        <small>ilk sevgi itirafı</small>
+    </div>
+
+</div>
+
+<div class="timeline-item">
+
+    <span class="timeline-dot"></span>
+
+    <div>
+        <strong>16.08.2025</strong>
+        <small>sevgili olduğumuz gün</small>
+    </div>
+
+</div>
+
+<div class="timeline-item">
+
+    <span class="timeline-dot"></span>
+
+    <div>
+        <strong>29.10.2025</strong>
+        <small>ilk sesli konuşmamız</small>
+    </div>
+
+</div>
+
+</div>
+
+                    </div>
+
+                    <div class="card-bottom">
+                        ve daha nice güzel günlere...
+                    </div>
+
+                </a>
+
+
+                <!-- ŞARKILAR -->
+                <a href="#songs" class="home-card">
+
+
+                    <div class="card-top">
+
+                        <span class="card-icon music-icon">
+                            ♫
+                        </span>
+
+                        <span class="card-arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Bizim Şarkılarımız
+                    </h3>
+
+                    <div class="mini-songs">
+
+                        <div class="mini-song">
+
+                            <div class="mini-cover"></div>
+
+                            <div>
+                                <strong>Sana Kıyamam</strong>
+                                <small>Joker</small>
+                            </div>
+
+                            <span>↗</span>
+
+                        </div>
+
+                        <div class="mini-song">
+
+                            <div class="mini-cover"></div>
+
+                            <div>
+                                <strong>Uyu Bebeğim</strong>
+                                <small>Anıl Emre Daldal</small>
+                            </div>
+
+                            <span>↗</span>
+
+                        </div>
+
+                        <div class="mini-song">
+
+                            <div class="mini-cover"></div>
+
+                            <div>
+                                <strong>Aşk</strong>
+                                <small>Gökhan Türkmen</small>
+                            </div>
+
+                            <span>↗</span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="small-card-button">
+                        ♫ &nbsp; Tüm Şarkılar
+                    </button>
+
+                </a>
+
+<!-- NOT -->
+<a href="#notes" class="home-card">
+
+    <div class="card-top">
+        <span class="card-icon">♡</span>
+        <span class="card-arrow">→</span>
+    </div>
+
+    <h3>senin için bir not</h3>
+
+    <div class="note-preview">
+        <p>
+            sana Bir Mesajım Var, ama bazen söyleyemediğim şeyler var. Bu notlar, kalbimin derinliklerinden gelen küçük ama anlamlı mesajlar. Her bir kelime, sana olan sevgimi ve değerimi ifade ediyor. Umarım bu notlar, gününü aydınlatır ve yüzünde bir gülümseme bırakır.
+        </p>
+    </div>
+
+    <button class="small-card-button">
+        ♡ &nbsp; Not Al
+    </button>
+
+</a>
+
+
+                <!-- PLANLAR -->
+                <a href="#plans" class="home-card">
+
+                    <div class="card-top">
+
+                        <span class="card-icon">
+                            ☑
+                        </span>
+
+                        <span class="card-arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Birlikte Yapılacaklar
+                    </h3>
+
+                    <div class="todo-list">
+
+                        <label>
+                            <input type="checkbox">
+                            <span>İlk buluşma</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>birlikte oyun oyna</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>film maratonu yap</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>daha çok seyahat et</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>hayallerimize ulaş</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>birlikte fotoğraf çek</span>
+                        </label>
+
+                    </div>
+
+                    <button class="small-card-button">
+                        ＋ &nbsp; Yeni Ekle
+                    </button>
+
+                </a>
+
+
+                <!-- SAYAÇ -->
+                <div class="home-card counter-card">
+
+                    <div class="card-top">
+
+                        <span class="card-icon">
+                            ◷
+                        </span>
+
+                        <span class="card-arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Sayaç
+                    </h3>
+
+                    <div class="circle-counter">
+
+                        <div class="counter-inner">
+
+                            <span>
+                                ♡
+                            </span>
+
+                            <strong id="circleDays">
+                                0
+                            </strong>
+
+                            <small>
+                                gün
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-bottom">
+                        ve daha nice...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <div class="bottom-divider">
+                <span></span>
+                <i>♡</i>
+                <span></span>
+            </div>
+
+        </section>
+
+
+        <!-- HİKAYE -->
+        <section id="story" class="content-section">
+
+            <div class="section-heading">
+
+                <span>
+                    ♡CHAPTERS OF US♡
+                </span>
+
+                <h2>
+                    bizim hikayemiz
+                </h2>
+
+                <p>
+                    küçük anlardan oluşan büyük bir hikaye
+                </p>
+
+<div class="story-timeline">
+
+    <article class="story-item">
+
+        <div class="story-date">
+            13.08.2025
+        </div>
+
+        <h3>
+            ilk konuşmamız
+        </h3>
+
+        <p>
+            her şeyin küçük bir konuşmayla başladığı gün.
+        </p>
+
+    </article>
+
+
+    <article class="story-item">
+
+        <div class="story-date">
+            16.08.2025
+        </div>
+
+        <h3>
+            hikâyemizin başladığı gün
+        </h3>
+
+        <p>
+            birbirimizi seçtiğimiz ve hikâyemizin gerçekten başladığı gün.
+        </p>
+
+    </article>
+
+
+    <article class="story-item">
+
+        <div class="story-date">
+            29.10.2025
+        </div>
+
+        <h3>
+            ilk sesli konuşmamız
+        </h3>
+
+        <p>
+            birbirimizin sesini ilk kez duyduğumuz gün.
+        </p>
+
+    </article>
+
+
+    <article class="story-item">
+
+        <div class="story-date">
+            DEVAMI VAR
+        </div>
+
+        <h3>
+            daha yazılacak çok şey var
+        </h3>
+
+        <p>
+            bu hikâyenin sonu değil sadece devam eden bir bölüm.
+        </p>
+
+    </article>
+
+</div>
+
+        </section>
+
+
+        <!-- ŞARKILAR -->
+        <section id="songs" class="content-section">
+
+            <div class="section-heading">
+
+                <span>
+                    OUR SOUNDTRACK
+                </span>
+
+                <h2>
+                    bizim şarkılarımız
+                </h2>
+
+                <p>
+                    bazı şarkılar sadece müzik değildir
+                </p>
+
+            </div>
+
+
+            <div class="songs-container">
+
+                <div class="song-list" id="songList">
+
+                    <!-- JS dolduracak -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PLANLAR -->
+        <section id="plans" class="content-section">
+
+            <div class="section-heading">
+
+                <span>
+                    OUR PLANS
+                </span>
+
+                <h2>
+                    birlikte yapılacaklar
+                </h2>
+
+                <p>
+                    henüz gerçekleştirmediğimiz güzel şeyler
+                </p>
+
+            </div>
+
+
+            <div class="plans-container">
+
+                <div class="plan-input-row">
+
+                    <input
+                        type="text"
+                        id="planInput"
+                        placeholder="yeni bir şey ekle..."
+                    >
+
+                    <button id="addPlan">
+                        +
+                    </button>
+
+                </div>
+
+                <div id="plansList"></div>
+
+            </div>
+
+        </section>
+
+
+<!-- NOTLAR -->
+<section id="notes" class="content-section">
+
+    <div class="section-heading">
+
+        <span>
+            LITTLE NOTES
+        </span>
+
+        <h2>
+            senin için bir not
+        </h2>
+
+        <p>
+            bazen söyleyemediklerimi burada bulabilirsin
+        </p>
+
+    </div>
+
+    <div class="note-box">
+
+        <button id="getNote">
+            ♡ &nbsp; Bir Not Al
+        </button>
+
+        <div id="randomNote">
+            sana küçük bir mesajım var ♡
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- AYARLAR -->
+    <div class="modal" id="settingsModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeSettings">
+                ×
+            </button>
+
+            <span class="modal-label">
+                SETTINGS
+            </span>
+
+            <h2>
+                ayarlar
+            </h2>
+
+            <div class="setting-row">
+
+                <div>
+                    <strong>
+                        Tema
+                    </strong>
+
+                    <small>
+                        koyu / açık
+                    </small>
+                </div>
+
+                <button id="modalThemeButton">
+                    değiştir
+                </button>
+
+            </div>
+
+            <div class="setting-row">
+
+                <div>
+                    <strong>
+                        Animasyonlar
+                    </strong>
+
+                    <small>
+                        düşen kalpler
+                    </small>
+                </div>
+
+                <button id="animationButton">
+                    açık
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+
+    <script src="script.js"></script>
+
+<!-- AY / GÜNEŞ -->
+<div class="theme-celestial">
+
+    <div class="celestial-moon">
+        <span class="mist-ring ring-1"></span>
+        <span class="mist-ring ring-2"></span>
+    </div>
+
+    <div class="celestial-sun">
+<span class="sun-mist mist-1"></span>
+<span class="sun-mist mist-2"></span>
+<span class="sun-mist mist-3"></span>
+<span class="sun-mist mist-4"></span>
+<span class="sun-mist mist-5"></span>
+<span class="sun-mist mist-6"></span>
+    </div>
+
+</div>
+
+</body>
+</html>
+
